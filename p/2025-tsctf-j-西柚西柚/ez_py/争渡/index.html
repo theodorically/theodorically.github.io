@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="2025 TSCTF-J 西柚西柚/EZ_PY/争渡 难得不用写令人汗颜的数分作业，晚上花点时间把剩下的题目再整理学习下 ：）\n西柚西柚 虽然是Day1的题目，但是卡在其他题目上了没做它（\n首先看看题干：什么是Jackson？\n……好问题！ 查了一下，Jackson是一个用于Java的JSON处理库，可以将Java对象序列化为JSON字符串，也可以将JSON字符串反序列化回Java对象。故可以构造恶意Java类。\n">
-<title>2025TSCTF-J web(1)</title>
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="难得不用写令人汗颜的数分作业，晚上花点时间把剩下的题目再整理学习下 ：）\n西柚西柚 虽然是Day1的题目，但是卡在其他题目上了没做它（\n首先看看题干：什么是Jackson？\n……好问题！ 查了一下，Jackson是一个用于Java的JSON处理库，可以将Java对象序列化为JSON字符串，也可以将JSON字符串反序列化回Java对象。故可以构造恶意Java类。\n">
+<title>2025 TSCTF-J 西柚西柚/EZ_PY/争渡</title>
 
-<link rel='canonical' href='http://localhost:1313/p/2025tsctf-j-web1/'>
+<link rel='canonical' href='https://theodorically.github.io/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/'>
 
-<link rel="stylesheet" href="/scss/style.min.6a692fd055deae459f2a9767f57f3855ba80cafd5041317f24f7360f6ca47cdf.css"><meta property='og:title' content="2025TSCTF-J web(1)">
-<meta property='og:description' content="2025 TSCTF-J 西柚西柚/EZ_PY/争渡 难得不用写令人汗颜的数分作业，晚上花点时间把剩下的题目再整理学习下 ：）\n西柚西柚 虽然是Day1的题目，但是卡在其他题目上了没做它（\n首先看看题干：什么是Jackson？\n……好问题！ 查了一下，Jackson是一个用于Java的JSON处理库，可以将Java对象序列化为JSON字符串，也可以将JSON字符串反序列化回Java对象。故可以构造恶意Java类。\n">
-<meta property='og:url' content='http://localhost:1313/p/2025tsctf-j-web1/'>
+<link rel="stylesheet" href="/scss/style.min.6a692fd055deae459f2a9767f57f3855ba80cafd5041317f24f7360f6ca47cdf.css"><meta property='og:title' content="2025 TSCTF-J 西柚西柚/EZ_PY/争渡">
+<meta property='og:description' content="难得不用写令人汗颜的数分作业，晚上花点时间把剩下的题目再整理学习下 ：）\n西柚西柚 虽然是Day1的题目，但是卡在其他题目上了没做它（\n首先看看题干：什么是Jackson？\n……好问题！ 查了一下，Jackson是一个用于Java的JSON处理库，可以将Java对象序列化为JSON字符串，也可以将JSON字符串反序列化回Java对象。故可以构造恶意Java类。\n">
+<meta property='og:url' content='https://theodorically.github.io/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/'>
 <meta property='og:site_name' content='m0rnis'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-10-28T19:43:20&#43;08:00'/><meta property='article:modified_time' content='2025-10-28T19:43:20&#43;08:00'/>
-<meta name="twitter:title" content="2025TSCTF-J web(1)">
-<meta name="twitter:description" content="2025 TSCTF-J 西柚西柚/EZ_PY/争渡 难得不用写令人汗颜的数分作业，晚上花点时间把剩下的题目再整理学习下 ：）\n西柚西柚 虽然是Day1的题目，但是卡在其他题目上了没做它（\n首先看看题干：什么是Jackson？\n……好问题！ 查了一下，Jackson是一个用于Java的JSON处理库，可以将Java对象序列化为JSON字符串，也可以将JSON字符串反序列化回Java对象。故可以构造恶意Java类。\n">
+<meta name="twitter:title" content="2025 TSCTF-J 西柚西柚/EZ_PY/争渡">
+<meta name="twitter:description" content="难得不用写令人汗颜的数分作业，晚上花点时间把剩下的题目再整理学习下 ：）\n西柚西柚 虽然是Day1的题目，但是卡在其他题目上了没做它（\n首先看看题干：什么是Jackson？\n……好问题！ 查了一下，Jackson是一个用于Java的JSON处理库，可以将Java对象序列化为JSON字符串，也可以将JSON字符串反序列化回Java对象。故可以构造恶意Java类。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -269,7 +269,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/2025tsctf-j-web1/">2025TSCTF-J web(1)</a>
+            <a href="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/">2025 TSCTF-J 西柚西柚/EZ_PY/争渡</a>
         </h2>
     
         
@@ -307,8 +307,7 @@
     <section class="article-content">
     
     
-    <h1 id="2025-tsctf-j-西柚西柚ez_py争渡">2025 TSCTF-J 西柚西柚/EZ_PY/争渡
-</h1><p>难得不用写令人汗颜的数分作业，晚上花点时间把剩下的题目再整理学习下 ：）</p>
+    <p>难得不用写令人汗颜的数分作业，晚上花点时间把剩下的题目再整理学习下 ：）</p>
 <h2 id="西柚西柚">西柚西柚
 </h2><p>虽然是Day1的题目，但是卡在其他题目上了没做它（<br>
 首先看看题干：什么是Jackson？<br>
@@ -397,14 +396,18 @@
 </div><p>详细分析一下官方给出的Payload代码（如上）</p>
 <ol>
 <li>包导入部分：部分包的作用如下👇
-<img src="/image.png"
-	
-	
-	
+<img src="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image.png"
+	width="1424"
+	height="268"
+	srcset="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image_hu_a54bac12aefe2af.png 480w, /p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image_hu_6dd898adef826c9b.png 1024w"
 	loading="lazy"
 	
 		alt="alt text"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="531"
+		data-flex-basis="1275px"
 	
 ></li>
 <li>在Line12处，定义了一个类EShell来继承AbstractTranslet这个关键类<br>
@@ -419,60 +422,80 @@ AbstractTranslet是Apache Xalan XSLT处理器的基础类，在Jackson反序列�
 </li>
 </ol>
 <p>另外，ds还给出了一些关于这份WP的代码选择理由：
-<img src="/image-1.png"
-	
-	
-	
+<img src="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-1.png"
+	width="1394"
+	height="638"
+	srcset="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-1_hu_bdc4ec796c6e6605.png 480w, /p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-1_hu_3d9a5eff62d8e059.png 1024w"
 	loading="lazy"
 	
 		alt="alt text"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="218"
+		data-flex-basis="524px"
 	
 ><br>
-<img src="/image-2.png"
-	
-	
-	
+<img src="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-2.png"
+	width="1407"
+	height="646"
+	srcset="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-2_hu_2430a23d02c6d39.png 480w, /p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-2_hu_1a41dbcb7307a1.png 1024w"
 	loading="lazy"
 	
 		alt="alt text"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="217"
+		data-flex-basis="522px"
 	
 >
-<img src="/image-3.png"
-	
-	
-	
+<img src="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-3.png"
+	width="1383"
+	height="541"
+	srcset="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-3_hu_fa7cf6dd8873823d.png 480w, /p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-3_hu_c0d59ec33fa56ca0.png 1024w"
 	loading="lazy"
 	
 		alt="alt text"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="255"
+		data-flex-basis="613px"
 	
 ></p>
 <p>看来得抽出时间好好学学Java了（笑）</p>
 <h2 id="ez_py">EZ_PY
 </h2><p>令我非常遗憾的一题，最后一天坐在电脑前一晚上很坐牢了（<br>
 复盘下来，是fenjing代码错了，在不断猜flag路径，而且WP中这部分我在写脚本的时候语法写错了<br>
-<img src="/image-4.png"
-	
-	
-	
+<img src="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-4.png"
+	width="913"
+	height="224"
+	srcset="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-4_hu_6f483a991b13d967.png 480w, /p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-4_hu_2ac7abe71ff4e82f.png 1024w"
 	loading="lazy"
 	
 		alt="alt text"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="407"
+		data-flex-basis="978px"
 	
 ><br>
 关于fenjing代码之前的步骤，比赛时是用AI+CSDN把merge函数的漏洞一把梭的，把SECRET_KEY给污染了。面试那天发现自己对merge函数的理解有问题（悲），遂学习之<br>
 贴一下原函数：<br>
-<img src="/image-5.png"
-	
-	
-	
+<img src="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-5.png"
+	width="666"
+	height="368"
+	srcset="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-5_hu_a9e96ae81154611.png 480w, /p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-5_hu_e66bd99900e09447.png 1024w"
 	loading="lazy"
 	
 		alt="alt text"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="180"
+		data-flex-basis="434px"
 	
 ><br>
 merge函数可以将一个字典的内容合并到另一个对象中，不仅能合并到字典，还能合并到任何Python对象。<br>
@@ -481,38 +504,50 @@ for循环会遍历字典src中的每个键值对，k为键（key），v为值（
 如果不是字典类型，但是有同名属性k，且源值v是字典，就递归合并到该属性
 如果以上情况都不满足，就直接给目标对象设置新属性k，值为v。<br>
 所以merge函数可以深度合并字典和对象属性，回到污染链payload：<br>
-<img src="/image-7.png"
-	
-	
-	
+<img src="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-7.png"
+	width="735"
+	height="544"
+	srcset="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-7_hu_2c49c127300ecad8.png 480w, /p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-7_hu_a26ed5bbb09c65db.png 1024w"
 	loading="lazy"
 	
 		alt="alt text"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="135"
+		data-flex-basis="324px"
 	
 ><br>
 大致是这样一个思路：<br>
-<img src="/image-8.png"
-	
-	
-	
+<img src="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-8.png"
+	width="473"
+	height="687"
+	srcset="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-8_hu_8b8fc6e998ed17f2.png 480w, /p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-8_hu_1bd4d89b47b97990.png 1024w"
 	loading="lazy"
 	
 		alt="alt text"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="68"
+		data-flex-basis="165px"
 	
 ><br>
 这里的_init_的_globals_属性可以修改影响整个模块，且Flask的app通常在模块全局变量中</p>
 <h2 id="争渡">争渡
 </h2><p>做的时候卡在flag的提权了
-<img src="/image-10.png"
-	
-	
-	
+<img src="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-10.png"
+	width="1229"
+	height="1015"
+	srcset="/p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-10_hu_c1b1f8e1581fdb05.png 480w, /p/2025-tsctf-j-%E8%A5%BF%E6%9F%9A%E8%A5%BF%E6%9F%9A/ez_py/%E4%BA%89%E6%B8%A1/image-10_hu_7080a0902fadea38.png 1024w"
 	loading="lazy"
 	
 		alt="alt text"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="121"
+		data-flex-basis="290px"
 	
 ><br>
 查询知道，sudo（SuperUser DO）是Linux/Unix系统中的一个命令，允许普通用户以root的权限来执行命令。
@@ -676,7 +711,7 @@ NOPASSWD表明用户www-data可以无密码以root权限运行/usr/bin/base64，
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.2aa0994af9e35b1385f744caa25c83fa863a1ffcae1011c7c72a316ce308f714.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
