@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>m0rnis</title>
-        <link>http://localhost:1313/en/</link>
+        <link>https://theodorically.github.io/en/</link>
         <description>Recent content on m0rnis</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <copyright>m0rnis</copyright><atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>m0rnis</copyright><atom:link href="https://theodorically.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
